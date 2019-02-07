@@ -1,0 +1,72 @@
+{
+	"forms": [
+		{
+			"id": 0,
+			"label": "User",
+			"name": "users",
+			"sections": [
+				{
+					"title": "Leave Request",
+					"controls": [
+						{
+							"name": "typeOfLeave",
+							"label": "ประเภทการลา",
+							"type": "select",
+							"required": true,
+							"options": [
+								{
+									"label": "ลากิจ",
+									"value": "ลากิจ"
+								},
+								{
+									"label": "ลาป่วย",
+									"value": "ลาป่วย"
+								},
+								{
+									"label": "ลาพักร้อน",
+									"value": "ลาพักร้อน"
+								}
+							]
+						},{
+							"name": "startDate",
+							"label": "ตั้งแต่วันที่",
+							"type": "date",
+							"required": true
+						},{
+							"name": "endDate",
+							"label": "ถึงวันที่",
+							"type": "date",
+							"required": true
+						},{
+							"name": "substitute",
+							"label": "ผู้รับผิดชอบงานแทนช่วงลาหยุด",
+							"type": "select",
+							"required": true,
+							"options": [
+								{
+									"label": "สมชาย",
+									"value": "สมชาย"
+								},
+								{
+									"label": "สมชาติ",
+									"value": "สมชาติ"
+								},
+								{
+									"label": "สมหมาย",
+									"value": "สมหมาย"
+								}
+							]
+						},
+						{
+							"name": "reasonOfLeave",
+							"label": "เหตุผลที่ลาหยุด",
+							"type": "text",
+							"required": true
+						}
+					]
+				}
+			],
+			"primaryText": "typeOfLeave"
+		}
+	]
+}
